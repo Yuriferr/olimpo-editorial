@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3eddf" />
+    <meta name="description" content="Um atlas editorial para atravessar os mitos do Olimpo." />
+    <title>Olimpo — Atlas dos deuses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-god="athena">
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Olimpo, início">
+          <span class="brand-mark">Ω</span><span>OLIMPO<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a class="nav-link is-active" href="#deuses">Os deuses</a>
+          <a class="nav-link" href="#mitos">Mitos & histórias</a>
+          <a class="nav-link" href="#perfil">Meu perfil</a>
+          <a class="nav-link" href="#sobre">O projeto</a>
+        </nav>
+        <button class="read-button" id="randomStory"><span>Uma história</span><span class="arrow">↗</span></button>
+        <button class="mobile-menu" aria-label="Abrir navegação">☰</button>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-art" aria-hidden="true"><div class="art-grain"></div><div class="art-halo"></div><img id="heroImage" src="assets/athena.png" alt="" /></div>
+          <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span id="heroDomain">DEUSA DA SABEDORIA</span><span class="eyebrow-number" id="heroTotal">05 — 13</span></div>
+            <p class="hero-kicker">UM ATLAS DOS IMORTAIS</p>
+            <h1 id="heroTitle">A sabedoria<br />tem <em>armadura.</em></h1>
+            <p class="hero-description" id="heroDescription">Entre a estratégia e a coragem, Athena ensina que a força mais duradoura nasce de uma mente desperta.</p>
+            <div class="hero-actions"><a class="primary-button" href="#mitos"><span>Explorar os mitos</span><span>↗</span></a><span class="hero-note">UMA JORNADA PELO IMAGINÁRIO GREGO</span></div>
+          </div>
+          <div class="hero-caption"><span class="caption-rule"></span><span id="heroCaption">ATHENA · MÁRMORE E MEMÓRIA</span></div>
+          <div class="hero-index"><span class="index-line"></span><span id="heroIndex">01</span></div>
+        </section>
+
+        <section class="gods-section" id="deuses">
+          <div class="section-heading"><div><p class="section-kicker">DOZE DEUSES OLÍMPICOS · UM REINO ALÉM</p><h2>Escolha seu <em>destino.</em></h2></div><p class="section-intro">Doze olímpicos e uma passagem para o submundo.<br />Cada divindade abre uma nova paisagem.</p></div>
+          <div class="god-selector" id="godSelector" role="tablist" aria-label="Os doze deuses olímpicos"></div>
+          <div class="extra-god"><p class="extra-god-label">ALÉM DO OLIMPO</p><div class="god-selector extra-god-selector" id="extraGodSelector" role="tablist" aria-label="Divindades além do Olimpo"></div></div>
+        </section>
+
+        <section class="stories-section" id="mitos">
+          <div class="stories-header"><div><p class="section-kicker" id="storyKicker">CADERNO DE ATHENA</p><h2>Histórias que <em>ficam.</em></h2></div><a class="text-link" href="#storyGrid">Ver todos os mitos <span>↗</span></a></div>
+          <div class="story-grid" id="storyGrid"></div>
+        </section>
+
+        <section class="profile-section" id="perfil" aria-labelledby="profileTitle"><div class="profile-art" aria-hidden="true"><span>YF</span><i>Ω</i></div><div class="profile-copy"><p class="section-kicker">QUEM CRIOU ESTE ATLAS</p><h2 id="profileTitle">Yuri <em>Ferr.</em></h2><p>Um projeto de Yuri Ferr, criado para explorar a mitologia grega por meio de design, narrativa e tecnologia. Cada perfil abre uma nova porta para as histórias que atravessaram séculos.</p><div class="profile-links"><a href="https://github.com/Yuriferr" target="_blank" rel="noreferrer"><span>GitHub</span><b>↗</b></a><a href="https://www.linkedin.com/in/yuriferr/" target="_blank" rel="noreferrer"><span>LinkedIn</span><b>↗</b></a></div></div><span class="profile-index">PERFIL · 001</span></section>
+
+      <section class="quote-section" id="sobre"><span class="quote-ornament">❧</span><p class="quote-label">FRAGMENTO · <span id="quoteSource">A CORUJA DE ATENAS</span></p><blockquote id="quoteText">“A inteligência vê o caminho antes que os pés o encontrem.”</blockquote><span class="quote-rule"></span><p class="quote-footnote">NOTAS DE UM MUNDO ANTIGO, REIMAGINADO</p></section>
+      </main>
+
+      <dialog class="story-dialog" id="storyDialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" aria-label="Fechar história">×</button><p class="section-kicker" id="dialogEyebrow">CADERNO DO OLIMPO</p><h2 id="dialogTitle"></h2><p id="dialogBody"></p><span class="quote-rule"></span><p class="quote-footnote">FRAGMENTOS DO IMAGINÁRIO GREGO</p></dialog>
+
+      <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">Ω</span><span>OLIMPO<span class="brand-dot">.</span></span></a><p>UM ATLAS DE MITOS E MEMÓRIA</p><span class="footer-copy">© 2026 · FEITO ENTRE MUNDOS</span></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

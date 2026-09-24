@@ -1,6 +1,6 @@
 # Olimpo — Atlas dos deuses
 
-Blog editorial estático em português com os doze deuses olímpicos tradicionais, além de um perfil extra para Hades. Cada divindade troca a paleta, a arte de capa, os mitos e o fragmento em destaque. Os cartões abrem leituras em uma janela acessível. Uma seção de perfil apresenta Yuri Ferr e links para GitHub e LinkedIn.
+Blog editorial estático em português com os doze deuses olímpicos tradicionais, além de um perfil extra para Hades. Cada divindade troca a paleta, a arte de capa, os mitos e o fragmento em destaque. Os cartões abrem leituras em uma janela acessível. Uma seção de perfil apresenta Yuri Fernandes e links para GitHub e LinkedIn.
 
 ## Como abrir
 
